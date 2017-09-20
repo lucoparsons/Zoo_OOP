@@ -1,6 +1,7 @@
 /**
  * Created by h205p2 on 9/12/17.
  */
+import java.util.ArrayList;
 public class zoo {
 
     public static void main(String[] args) {
@@ -24,6 +25,16 @@ public class zoo {
 
         Bee stinger = new Bee("Stinger");
         stinger.eat("pollen");
+
+        ArrayList<Animal> animals = new ArrayList<Animal>();
+        animals.add(tigger);
+        animals.add(pooh);
+        animals.add(rarity);
+        //animals.add(gemma);
+        //animals.add(stinger);
+
+        Zookeeper zoebot = new Zookeeper("Zoebot");
+        zoebot.feedAnimals(animals, "burritos");
 
 
     }
