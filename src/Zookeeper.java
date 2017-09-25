@@ -10,8 +10,7 @@ public class Zookeeper {
     }
 
     public void feedAnimals(ArrayList<Animal> a, String food) {
-        Animal lastA = a.get(a.size() - 1);
-        int pop = lastA.populationCount();
+        int pop = Animal.populationCount();
         System.out.println(name + " is feeding " + food + " to " + a.size() + " of " + pop + " animals");
         for(int i = 0; i < a.size(); i++) {
             a.get(i).eat(food);

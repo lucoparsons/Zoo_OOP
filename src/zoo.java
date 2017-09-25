@@ -30,7 +30,7 @@ public class zoo {
         animals.add(tigger);
         animals.add(pooh);
         animals.add(rarity);
-        //animals.add(gemma);
+        animals.add(gemma);
         //animals.add(stinger);
 
         Zookeeper zoebot = new Zookeeper("Zoebot");
